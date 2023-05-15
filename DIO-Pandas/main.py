@@ -3,12 +3,11 @@ import matplotlib.pyplot as plt
 
 import pandas as pd
 
-
 pd.set_option('display.max_columns', None)
 pd.options.display.float_format = "{:20,.2f}".format
 
 
-df = pd.read_excel("./AdventureWorks.xlsx")
+df = pd.read_excel("DIO-Pandas\AdventureWorks.xlsx")
 
 #Receita Total
 income = df["Valor Venda"].sum()
